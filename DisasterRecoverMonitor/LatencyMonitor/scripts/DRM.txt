@@ -1,0 +1,29 @@
+﻿create schema DRM
+go
+
+create table DRM.Inbound 
+(
+	[uid] uniqueidentifier,
+	sequential_id int identity(1, 1),
+	inTime datetime
+)
+go
+
+create procedure DRM.Write 
+as 
+begin
+insert into DRM.Inbound (uid, inTime)
+values(NEWID(), GETDATE());
+end
+go
+
+
+create table DRM.LatencyLog
+(
+	pairing nvarchar(255),
+	sequential_id int identity(1, 1),
+	tranactionDiff int,
+	lastCommitLatency bigint,
+	lastReplicationLatency bigint,
+	pollPerSec int
+)

@@ -1,0 +1,30 @@
+<Monitor.Config>
+	<FailOverGroup name = "Volga">
+		<Primary name = "Volga">
+			<HostName>rye-db-neu-1.database.windows.net</HostName>
+			<UserName>jac.thomas@ryedale.com</UserName>
+			<Phrase>Diolch.123</Phrase>
+			<DeploymentCode>Volga</DeploymentCode>
+		</Primary >
+		<Secondary name = "Volga">
+			<HostName>rye-db-wus-1.database.windows.net</HostName>
+			<UserName>jac.thomas@ryedale.com</UserName>
+			<Phrase>Diolch.123</Phrase>
+			<DeploymentCode>Volga</DeploymentCode>
+		</Secondary>
+	</FailOverGroup>
+	<FailOverGroup name = "Karratha">	
+		<Primary name = "Karratha">
+			<HostName>rye-db-wus-8.database.windows.net</HostName>
+			<UserName>jac.thomas@ryedale.com</UserName>
+			<Phrase>Diolch.123</Phrase>
+			<DeploymentCode>Karratha</DeploymentCode>
+		</Primary>
+		<Secondary name = "Karratha">
+			<HostName>rye-db-weu-9.database.windows.net</HostName>
+			<UserName>jac.thomas@ryedale.com</UserName>
+			<Phrase>Diolch.123</Phrase>
+			<DeploymentCode>Karratha</DeploymentCode>
+		</Secondary >
+	</FailOverGroup>
+</Monitor.Config>
