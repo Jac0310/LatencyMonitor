@@ -18,7 +18,7 @@ The figure below highlights the structure of the client code of the application.
 the Database. The central design pattern to be employed is the observer pattern. In this design template the
 database acts as a publisher and has many subscribers.
 
-![Class Diagram](/path/img.jpg "Class Diagram")
+![Class Diagram](DRClassDiagram.png "Class Diagram")
 
 Pollers connect, query and update the status of each database, which must publish events to any subscribers
 interested in this update. To facilitate this pattern the database class will maintain a static observable collection of
